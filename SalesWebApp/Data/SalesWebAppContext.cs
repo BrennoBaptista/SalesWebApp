@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using SalesWebApp.Models.Entities;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace SalesWebApp.Infra
 {
     public class SalesWebAppContext : DbContext
     {
-        public SalesWebAppContext (DbContextOptions<SalesWebAppContext> options)
+        public SalesWebAppContext(DbContextOptions<SalesWebAppContext> options)
             : base(options)
         {
         }
