@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SalesWebApp.Infra;
+using SalesWebApp.Data;
 using SalesWebApp.Models.Entities;
 using System.Linq;
 using System.Threading.Tasks;

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SalesWebApp.Models.Entities;
 
-namespace SalesWebApp.Infra
+namespace SalesWebApp.Data
 {
     public class SalesWebAppContext : DbContext
     {
@@ -9,6 +10,8 @@ namespace SalesWebApp.Infra
         {
         }
 
-        public DbSet<SalesWebApp.Models.Entities.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
     }
 }
