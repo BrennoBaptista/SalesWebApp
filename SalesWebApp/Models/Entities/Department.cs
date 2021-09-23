@@ -13,7 +13,7 @@ namespace SalesWebApp.Models.Entities
         public ICollection<Seller> Sellers { get; set; } = new List<Seller>();
 
         public Department()
-        {}
+        { }
 
         public Department(int id, string name)
         {
