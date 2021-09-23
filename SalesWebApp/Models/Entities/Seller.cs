@@ -14,6 +14,7 @@ namespace SalesWebApp.Models.Entities
 
         //Departament assossiation .1
         public Department Department { get; set; }
+        public int DepartmentId { get; set; }
 
         //SalesRecord assossiation .*
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
